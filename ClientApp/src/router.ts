@@ -5,26 +5,39 @@ import Home from './views/Home.vue';
 Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home,
-    },
-    {
-      path: '/counter',
-      name: 'counter',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "counter" */ './views/Counter.vue'),
-    },
-    {
-      path: '/fetch-data',
-      name: 'fetch-data',
-      component: () => import(/* webpackChunkName: "fetch-data" */ './views/FetchData.vue'),
-    },
-  ],
+    mode: 'history',
+    base: process.env.BASE_URL,
+    routes: [
+        {
+            path: '/',
+            name: 'home',
+            component: Home,
+        },
+        {
+            path: '/counter',
+            name: 'counter',
+            // route level code-splitting
+            // this generates a separate chunk (about.[hash].js) for this route
+            // which is lazy-loaded when the route is visited.
+            component: () => import(/* webpackChunkName: "counter" */ './views/Counter.vue'),
+        },
+        {
+            path: '/fetch-data',
+            name: 'fetch-data',
+            component: () => import(/* webpackChunkName: "fetch-data" */ './views/FetchData.vue'),
+        },
+        {
+            path: '/herculead',
+            name: 'herculead',
+            component: () => import(/* webpackChunkName: "herculead" */ './views/Herculead.vue'),
+        },
+        {
+            path: '/login',
+            name: 'login',
+            component: () => import(/* webpackChunkName: "login" */ './views/Login.vue')
+
+        }
+
+
+    ],
 });
