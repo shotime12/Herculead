@@ -1,11 +1,7 @@
-﻿<template>
+﻿<!--<template>
     <div>
         <p>
-            Current count (Vuex):
-            <strong>{{ currentCount }}</strong>
-        </p>
-        <v-btn class="ma-2" color="info" @click.prevent="increment">Increment</v-btn>
-        <v-btn class="ma-2" color="info" @click.prevent="reset">Reset</v-btn>
+            Current count
     </div>
 </template>
 
@@ -17,18 +13,6 @@
 
     @Component
     export default class Herculead extends Vue {
-        @Getter('currentCount', { namespace })
-        private currentCount!: number;
-        @Action('increment', { namespace })
-        private incrementCounter: any;
-        @Action('reset', { namespace })
-        private resetCounter: any;
-
-        private increment() {
-            this.incrementCounter();
-        }
-        private reset() {
-            this.resetCounter();
-        }
+        
     }
-</script>
+</script>-->
